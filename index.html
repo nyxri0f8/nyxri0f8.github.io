@@ -65,7 +65,7 @@
   .price span + span { border-left: var(--rule); background: var(--ink); color: var(--paper); }
   .kicker { margin: 34px 0 0; font: 900 clamp(22px, 3vw, 40px)/.95 var(--wide); font-stretch: 125%; text-transform: uppercase; letter-spacing: -.01em; }
   .kicker em { font-style: normal; color: var(--red); display: block; }
-  h1 { margin: 6px 0 0; font: 900 clamp(96px, 16vw, 232px)/.8 var(--wide); font-stretch: 62%; text-transform: uppercase; letter-spacing: -.02em; position: relative; isolation: isolate; }
+  h1 { margin: 6px 0 0; white-space: nowrap; font: 900 clamp(72px, 11.5vw, 200px)/.8 var(--wide); font-stretch: 62%; text-transform: uppercase; letter-spacing: -.02em; position: relative; isolation: isolate; }
   h1 .ghost { position: absolute; inset: 0; color: var(--red); transform: translate(.035em, .03em); mix-blend-mode: multiply; z-index: -1; }
   h1 .solid { position: relative; }
   .roles { display: flex; flex-wrap: wrap; gap: 6px; margin: 26px 0 22px; }
@@ -214,6 +214,7 @@
   @media (max-width: 900px) {
     .cover .wrap { grid-template-columns: 1fr; min-height: 0; }
     .cover-l { border-right: 0; padding-right: 0; }
+    h1 { font-size: clamp(72px, 21vw, 180px); }
     .cover-r { height: 440px; border-top: var(--rule); margin-inline: calc(-1 * var(--g)); }
     .specs { grid-template-columns: 1fr; }
     .spec + .spec { border-left: 0; border-top: var(--rule); }
